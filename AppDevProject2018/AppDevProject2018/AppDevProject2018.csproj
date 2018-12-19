@@ -10,6 +10,75 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\Badger.jpg" />
+    <None Remove="Assets\Images\Opening _Image_Forest.jpeg" />
+    <None Remove="Assets\Images\Otter.jpg" />
+    <None Remove="Assets\Images\Red Deer.jpg" />
+    <None Remove="Images\Badger.jpg" />
+    <None Remove="Images\Grey_Squirrel.jpg" />
+    <None Remove="Images\Hare.jpg" />
+    <None Remove="Images\LoginIcon.png" />
+    <None Remove="Images\Otter2.jpg" />
+    <None Remove="Images\Red_Deer.jpg" />
+    <None Remove="Images\Red_Fox.jpg" />
+    <None Remove="Images\Red_Squirrel.jpg" />
+    <None Remove="Images\Stoat.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Badger.jpg" />
+    <EmbeddedResource Include="Assets\Images\Opening _Image_Forest.jpeg" />
+    <EmbeddedResource Include="Assets\Images\Otter.jpg" />
+    <EmbeddedResource Include="Assets\Images\Red Deer.jpg" />
+    <EmbeddedResource Include="Images\Badger.jpg" />
+    <EmbeddedResource Include="Images\Grey_Squirrel.jpg" />
+    <EmbeddedResource Include="Images\Hare.jpg" />
+    <EmbeddedResource Include="Images\LoginIcon.png" />
+    <EmbeddedResource Include="Images\Otter2.jpg" />
+    <EmbeddedResource Include="Images\Red_Deer.jpg" />
+    <EmbeddedResource Include="Images\Red_Fox.jpg" />
+    <EmbeddedResource Include="Images\Red_Squirrel.jpg" />
+    <EmbeddedResource Include="Images\Stoat.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Add\" />
+    <Folder Include="MarkupExtensions\" />
+    <Folder Include="Data\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ImagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ImagePage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ImagePage3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ImagePage4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ImagePage5.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ImagePage6.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ImagePage7.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ImagePage8.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+            <!-- Title -->
+<ContentPage Title="Red Fox - Madra Rua" 
+             
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDevProject2018.ImagePage">
+
+    <StackLayout>
+        <!--Information about the animal as well as position, color, fontsize info -->
+        <Label Text="The red fox is an easily recognisable Irish animal, being very dog like, with a slender muzzle and long bushy tail. The red fox is highly adaptable and is found in many areas in Ireland. - Tap the image to go onto the next Animal!"
+            HorizontalOptions="Center" TextColor="Black" FontSize="Small" FontFamily="Questrial">
+        </Label>
+        <!-- Image name and setting the image to scle to fit the size of the page-->
+        <Image x:Name="image"  Aspect="AspectFit">
+            
+        <Image.GestureRecognizers>
+                <!-- Setting how many taps the image needs to go onto the next page -->
+                <TapGestureRecognizer Tapped = "TapGestureRecognizer_Tapped_1"/>
+        </Image.GestureRecognizers>
+            
+        </Image>
+        
+    </StackLayout>
+    
+</ContentPage>

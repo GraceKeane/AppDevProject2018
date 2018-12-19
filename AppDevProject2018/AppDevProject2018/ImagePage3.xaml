@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+             <!--Title-->
+<ContentPage Title="Red Deer - Fianna Dearg" 
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDevProject2018.ImagePage3">
+    <ContentPage.Content>
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <!-- Information about the animal as well as position, color, fontsize info -->
+            <Label Text="The Red Deer is Ireland's largest land mammal and the second largest deer species in Europe after the Elk. Adults produce two coats a year, the Summer coat is reddish brown in color with grey to yellow underbelly. Some deer may also have white spots on the back and flanks - Tap the image to go onto the next Animal!"
+            HorizontalOptions="Center" TextColor="Black" FontSize="Small" FontFamily="Questrial"/>
+
+            <!-- Image name and setting the image to scle to fit the size of the page-->
+            <Image x:Name="image"  Aspect="AspectFit">
+                
+            <Image.GestureRecognizers>
+                    <!-- Setting how many taps the image needs to go onto the next page -->
+                    <TapGestureRecognizer Tapped = "TapGestureRecognizer_Tapped_1"/>
+            </Image.GestureRecognizers>
+            </Image>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

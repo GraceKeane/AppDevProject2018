@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="Grey Squirrel - Iora Liath" 
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDevProject2018.ImagePage2">
+    <ContentPage.Content>
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <!-- Information about the animal as well as position, color, fontsize info -->
+            <Label Text="The Grey Squirrel was introduced from Englamd to Ireland in 1911. It can be found throughout Ireland mainly in woodland areas. The Grey Squirrel is notably larger than the native Red Squirrel. It has a distinctive long, bushy tail and short front legs. - Tap the image to go onto the next Animal!"
+            HorizontalOptions="Center" TextColor="Black" FontSize="Small" FontFamily="Questrial"/>
+
+            <!-- Image name and setting the image to scle to fit the size of the page-->
+            <Image x:Name="image"  Aspect="AspectFit">
+                
+            <Image.GestureRecognizers>
+                    <!-- Setting how many taps the image needs to go onto the next page -->
+                    <TapGestureRecognizer Tapped = "TapGestureRecognizer_Tapped_1"/>
+            </Image.GestureRecognizers>
+                
+            </Image>
+      
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

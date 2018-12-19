@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+            <!-- Title -->
+<ContentPage Title="Stoat - Easog" 
+             
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDevProject2018.ImagePage5">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <!-- Information about the animal as well as position, color, fontsize info -->
+            <Label Text="The Stoat is similar to the Weasel. The Stoat has a long neck. Its whiskers are brown or white in colour and are very long. Their ears are short, rounded and lie almost flattened against the skull. The Stoat usually preys on large rodents and will take down animals far larger than itself e.g. Rabbits. - Tap the image to go onto the next Animal!"
+            HorizontalOptions="Center" TextColor="Black" FontSize="Small" FontFamily="Questrial"/>
+
+            <!-- Image name and setting the image to scle to fit the size of the page-->
+            <Image x:Name="image"  Aspect="AspectFit">
+                
+                <Image.GestureRecognizers>
+                    <!-- Setting how many taps the image needs to go onto the next page -->
+                    <TapGestureRecognizer Tapped = "TapGestureRecognizer_Tapped_1"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

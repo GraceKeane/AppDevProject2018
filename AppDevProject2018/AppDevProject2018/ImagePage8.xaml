@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+            <!-- Title -->
+<ContentPage Title="Badger - Broc" 
+             
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDevProject2018.ImagePage8">
+    <ContentPage.Content>
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <!-- Information about the animal as well as position, color, fontsize info -->
+            <Label Text="The Badger is the largest terrestrial omnivore in Ireland. It is instantly recognisable by its white head and dark stripes through its eyes. Badgers are powerfully built with a relatively small head, short thick neck, short muscular legs and a bushy tail. They are widespread throughout Ireland but being secretive and nocturnal, they are seldom encountered in the wild. Badgers diet on Earthworms, Insects, Grubs, the eggs of ground-nesting birds and also roots and fruit."
+            HorizontalOptions="Center" TextColor="Black" FontSize="Small" FontFamily="Questrial"/>
+
+            <!-- Image name and setting the image to scle to fit the size of the page-->
+            <Image x:Name="image"  Aspect="AspectFit">
+                <Image.GestureRecognizers>
+                    <!-- Setting how many taps the image needs to go onto the next page -->
+                    <TapGestureRecognizer Tapped = "TapGestureRecognizer_Tapped_1"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

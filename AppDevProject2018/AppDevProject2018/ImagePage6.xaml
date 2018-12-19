@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+            <!--Title-->
+<ContentPage Title="Hare - Giorria" 
+             
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDevProject2018.ImagePage6">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <!-- Information about the animal as well as position, color, fontsize info -->
+            <Label Text="The Hare is one of three Hares found in Ireland and the only one that is native to Ireland. Brown hares are found in Northern Ireland and rabbits are widespread. The Irish Hare is thought to have been present from the late Pleistocene. Hares are herbivores which means they only eat plants and no meat - Tap the image to go onto the next Animal!"
+            HorizontalOptions="Center" TextColor="Black" FontSize="Small" FontFamily="Questrial"/>
+            
+            <!-- Image name and setting the image to scle to fit the size of the page-->
+            <Image x:Name="image"  Aspect="AspectFit">
+                
+                <Image.GestureRecognizers>
+                    <!-- Setting how many taps the image needs to go onto the next page -->
+                    <TapGestureRecognizer Tapped = "TapGestureRecognizer_Tapped_1"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

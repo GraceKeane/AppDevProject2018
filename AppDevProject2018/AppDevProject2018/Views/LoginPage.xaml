@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AppDevProject2018.Views.LoginPage">
+    <StackLayout x:Name="MasterLayout">
+
+        <!-- Title, position, color, fontsize and font family information -->
+        <Label Text= "Irish Wild Animals" HorizontalOptions="Center" TextColor="White" FontSize="Large"/>
+        
+        <StackLayout x:Name="LogoStack" VerticalOptions="FillAndExpand">
+            <Image x:Name="LoginIcon" Source="AppDevProject2018.Images.LoginIcon.png" Margin="0,0,1,1"/>
+        </StackLayout>
+
+        <!-- differabt sizes for differant devices the app will be used on -->
+        <StackLayout x:Name="LoginEntriesStack" VerticalOptions="StartAndExpand">
+            
+            <!-- padding -->
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                    <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
+                </OnIdiom>
+            </StackLayout.Padding>
+
+            <!--text box activity border color-->
+            <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="true"/>
+
+            <StackLayout>
+                <!-- Sign in procedure - assigning variables, positioning, assigning the color -->
+                <Label x:Name="Lb1_Username" Text="Username" 
+                HorizontalOptions="Center"
+                TextColor="White" />
+
+                <!-- Entry box -->
+                <Entry x:Name="Entry_Username" Placeholder="Username"/>
+
+                <!-- Password procedure - assigning variables, positioning, assigning the color -->
+                <Label x:Name="Lb1_Password" Text="Password" 
+                HorizontalOptions="Center"
+                TextColor="White"/>
+
+                <!-- Entry box -->
+                <Entry x:Name="Entry_Password" Placeholder="Password" />
+
+                <!-- submit button -->
+                <Button x:Name="Btn_Signin" Text="Sign up" Clicked="SignInProcedure" />
+                
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

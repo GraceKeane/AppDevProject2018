@@ -30,6 +30,8 @@ namespace AppDevProject2018.UWP
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            //MainPage = new LoginPage();
         }
 
         /// <summary>
